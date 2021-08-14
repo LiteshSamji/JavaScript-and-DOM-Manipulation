@@ -1,8 +1,5 @@
 // from data.js
 var tableData = data;
-
-// YOUR CODE HERE!
-
 var tbody = d3.select("tbody");
 var button = d3.select("#filter-btn");
 var inputFieldDate = d3.select("#datetime");
@@ -36,7 +33,7 @@ button.on("click", () => {
     let response = {
         filterDate
     }
-
+    // Display the filtered result's
     if(response.filterDate.length !== 0) {
         buildTable(filterDate);
     }
